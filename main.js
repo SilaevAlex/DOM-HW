@@ -17,11 +17,10 @@ user.dataCard = function () {
 
     for (var data in this) {
         if (data!= "dataCard")
-            info+=`${data} ${this[data]} `;
+            info+=`${data}: ${this[data]}<br> `;
     }
 
-    
-
+ 
     userInfo.innerHTML = info;
 
 };
